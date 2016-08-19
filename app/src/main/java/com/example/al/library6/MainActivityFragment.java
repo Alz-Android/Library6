@@ -4,9 +4,14 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
+import com.example.JokeSmith;
+import com.example.JokeWizard;
 
 
 /**
@@ -54,6 +59,8 @@ public class MainActivityFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -64,7 +71,15 @@ public class MainActivityFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_main_activity, container, false);
+
+        View rootView = inflater.inflate(R.layout.fragment_main_activity, container, false);
+
+        JokeWizard jokeWizard = new JokeWizard();
+        TextView myAwesomeTextView = (TextView)rootView.findViewById(R.id.joke_text);
+        myAwesomeTextView.setText(jokeWizard.tellJoke());
+
+        Log.i("MainFrag",jokeWizard.tellJoke());
+        return rootView;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
