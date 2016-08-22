@@ -5,10 +5,12 @@
     tools:context="com.example.al.library6.MainActivityFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_blank_fragment"
-        android:id="@+id/joke_text" />
+        android:text="@string/button_text"
+        android:onClick="launchLibraryActivity"
+        />
 
 </FrameLayout>

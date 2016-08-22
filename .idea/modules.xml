@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Library6.iml" filepath="$PROJECT_DIR$/Library6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/androidjoke/androidjoke.iml" filepath="$PROJECT_DIR$/androidjoke/androidjoke.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/jokesmith/jokesmith.iml" filepath="$PROJECT_DIR$/jokesmith/jokesmith.iml" />
       <module fileurl="file://$PROJECT_DIR$/jokewizard/jokewizard.iml" filepath="$PROJECT_DIR$/jokewizard/jokewizard.iml" />

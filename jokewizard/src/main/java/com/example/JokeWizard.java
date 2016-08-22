@@ -4,7 +4,7 @@ public class JokeWizard {
     public String tellJoke() {
 
         JokeSmith myJokeSmith = new JokeSmith();
-        return(myJokeSmith.toString());
+        return(myJokeSmith.JokeSmith());
 
     }
 }
